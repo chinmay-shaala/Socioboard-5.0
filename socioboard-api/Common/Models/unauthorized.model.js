@@ -334,7 +334,7 @@ class userLibs {
 
       return {userId: fetchedUserId, userInfo};
     } catch (err) {
-      // console.log(err)
+      console.log(err)
       // if we got an error and we created the transaction, roll it back
       if (transaction) {
         await transaction.rollback();

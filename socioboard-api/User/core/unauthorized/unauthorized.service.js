@@ -120,18 +120,18 @@ class unauthorizedController {
         const planDetails = await unauthorizedLibs.getPlanDetails(
           responseData.Activations.user_plan
         );
-        const mailDetails = await unauthorizedLibs.sendMail(
-          responseData,
-          planDetails.plan_name
-        );
+        // const mailDetails = await unauthorizedLibs.sendMail(
+        //   responseData,
+        //   planDetails.plan_name
+        // );
 
-        if (mailDetails) {
-          return SuccessResponse(
-            res,
-            null,
-            'User registered Please activate email'
-          );
-        }
+        // if (mailDetails) {
+        //   return SuccessResponse(
+        //     res,
+        //     null,
+        //     'User registered Please activate email'
+        //   );
+        // }
 
         return ErrorResponse(res);
       }
