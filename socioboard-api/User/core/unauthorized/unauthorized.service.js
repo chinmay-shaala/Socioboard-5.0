@@ -136,6 +136,7 @@ class unauthorizedController {
         return ErrorResponse(res);
       }
     } catch (err) {
+      console.log(err);
       return CatchResponse(res, err.message);
     }
   }
