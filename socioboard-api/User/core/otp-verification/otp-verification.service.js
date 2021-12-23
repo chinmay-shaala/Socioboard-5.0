@@ -68,7 +68,8 @@ class OtpVerificationController {
       );
       SuccessResponse(res, result);
     } catch (error) {
-      return CatchResponse(res, error.message);
+      return SuccessResponse(res, error.message);
+      // return CatchResponse(res, error.message);
     }
   }
 
