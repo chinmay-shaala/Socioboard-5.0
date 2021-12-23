@@ -41,6 +41,7 @@ class OtpVerificationController {
           ));
       SuccessResponse(res, result);
     } catch (error) {
+      console.log(error);
       return CatchResponse(res, error.message);
     }
   }
@@ -68,6 +69,7 @@ class OtpVerificationController {
       );
       SuccessResponse(res, result);
     } catch (error) {
+      console.log(error);
       return SuccessResponse(res, error.message);
       // return CatchResponse(res, error.message);
     }
